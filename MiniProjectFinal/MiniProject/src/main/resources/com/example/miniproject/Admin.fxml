@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="adminTabPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.AdminController">
+    <tabs>
+
+        <!-- Attendance Tab -->
+        <Tab style="-fx-background-color: A4D3E3FF;" text="Attendance">
+            <AnchorPane styleClass="left-form" stylesheets="@stylesheet.css">
+                <children>
+                    <VBox layoutX="77.0" layoutY="44.8" prefHeight="286.0" prefWidth="446.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="45.0">
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="438.0" text="Manage Attendance" />
+                        <TableView fx:id="attendanceTableView" prefHeight="230.0" prefWidth="446.0" stylesheets="@stylesheet.css">
+                            <columns>
+                                <TableColumn fx:id="attendanceStudentIdColumn" prefWidth="142.0" text="Student ID" />
+                                <TableColumn fx:id="attendanceLectureColumn" prefWidth="158.80003356933594" text="Lecture" />
+                                <TableColumn fx:id="attendanceDurationColumn" prefWidth="145.4000244140625" text="Duration (In Hours)" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                     <Button fx:id="addAttendanceButton" layoutX="77.0" layoutY="328.0" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Add Attendance" />
+               <Button fx:id="deleteAttendanceButton" layoutX="228.0" layoutY="328.0" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Delete Attendance" />
+               <Button fx:id="logOutButton" layoutX="523.0" layoutY="328.0" onAction="#handleLoginPage" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="LogOut" textFill="#c40000" />
+               <Label layoutX="192.0" layoutY="27.0" text="Date :">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Label>
+               <DatePicker fx:id="attendanceDatePicker" layoutX="235.0" layoutY="22.0" />
+               <Button fx:id="searchButton" layoutX="454.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Search" />
+               <Label layoutX="19.0" layoutY="35.0" text="Welcome Admin!!">
+                  <font>
+                     <Font name="System Bold" size="13.600000381469727" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="51.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@prof.png" />
+                  </image>
+               </ImageView>
+                </children>
+            </AnchorPane>
+        </Tab>
+
+        <!-- Assignment Tab -->
+        <Tab style="-fx-background-color: A4D3E3FF;" text="Assignment">
+            <AnchorPane prefHeight="371.0" prefWidth="574.0" styleClass="left-form" stylesheets="@stylesheet.css">
+                <children>
+                    <VBox layoutX="83.0" layoutY="46.0" prefHeight="310.0" prefWidth="434.0" spacing="10" AnchorPane.bottomAnchor="14.8" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="83.4" AnchorPane.topAnchor="46.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="5.0" prefHeight="20.0" prefWidth="429.0" text="Manage Assignments" />
+                        <TableView fx:id="assignmentTableView" prefHeight="294.0" prefWidth="440.0">
+                            <columns>
+                                <TableColumn fx:id="assignmentIdColumn" prefWidth="125.0" text="Assignment ID" />
+                                <TableColumn fx:id="assignmentTitleColumn" prefWidth="180.0" text="Title" />
+                                <TableColumn fx:id="submissionDateColumn" prefWidth="135.0" text="Submission Date" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    <Label layoutX="105.0" layoutY="14.0" text="Student ID : " />
+                    <TextField fx:id="studentIdTextField" layoutX="186.0" layoutY="9.0" />
+                    <Button layoutX="373.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleViewAssignments" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Get Assignments" />
+               <Button layoutX="524.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleLoginPage" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="LogOut" textFill="RED" />
+                </children>
+            </AnchorPane>
+        </Tab>
+
+        <!-- Student Info Tab -->
+        <Tab style="-fx-background-color: A4D3E3FF;" text="Student Info">
+            <AnchorPane prefHeight="371.0" prefWidth="622.0" styleClass="left-form" stylesheets="@stylesheet.css">
+                <children>
+                    <ScrollPane prefHeight="370.0" prefWidth="600.0" vbarPolicy="NEVER" vmax="0.0">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="1011.0" styleClass="left-form" stylesheets="@stylesheet.css">
+                                <children>
+                                    <Label alignment="CENTER" layoutX="16.0" layoutY="4.0" prefHeight="20.0" prefWidth="582.0" text="Manage Student Information" />
+                                    <VBox layoutX="21.0" layoutY="22.0" prefHeight="292.0" prefWidth="962.0" spacing="10" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="22.0">
+                                        <TableView fx:id="studentInfoTableView" prefHeight="290.0" prefWidth="960.0" style="-fx-background-radius: 30;">
+                                            <columns>
+                                                <TableColumn fx:id="studentIdColumn" prefWidth="140.0" text="Student ID" />
+                                                <TableColumn fx:id="usernameColumn" prefWidth="105.0" text="Username" />
+                                                <TableColumn fx:id="firstNameColumn" prefWidth="100.0" text="First Name" />
+                                                <TableColumn fx:id="lastNameColumn" prefWidth="90.0" text="Last Name" />
+                                                <TableColumn fx:id="phoneNoColumn" prefWidth="150.0" text="Phone No" />
+                                                <TableColumn fx:id="emailIdColumn" prefWidth="265.0" text="Email ID" />
+                                                <TableColumn fx:id="dobColumn" prefWidth="110.0" text="Date of Birth" />
+                                            </columns>
+                                        </TableView>
+                                    </VBox>
+                                    <Button fx:id="addStudentButton" layoutX="16.0" layoutY="321.0" onAction="#handleAdd" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Add Student" />
+                                    <Button fx:id="updateStudentButton" layoutX="122.0" layoutY="321.0" onAction="#handleUpdate" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Update Student" />
+                                    <Button fx:id="deleteStudentButton" layoutX="251.0" layoutY="321.0" onAction="#handleDelete" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Delete Student" />
+                           <Button layoutX="374.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleLoginPage" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="LogOut" textFill="#c70000" />
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </ScrollPane>
+                </children>
+            </AnchorPane>
+        </Tab>
+
+        <Tab style="-fx-background-color: A4D3E3FF;" text="Marks">
+         <content>
+            <AnchorPane prefHeight="371.0" prefWidth="574.0" styleClass="left-form" stylesheets="@stylesheet.css">
+               <children>
+                  <Label layoutX="67.0" layoutY="75.0" text="Student ID : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="studentIdField" layoutX="144.0" layoutY="72.0" />
+                  <Button layoutX="524.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleLoginPage" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="LogOut" textFill="RED" />
+                  <Label layoutX="318.0" layoutY="75.0" text="Exam : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dsamarks" layoutX="144.0" layoutY="119.0" prefHeight="25.0" prefWidth="105.0" />
+                  <TextField fx:id="javamarks" layoutX="362.0" layoutY="202.0" prefHeight="25.0" prefWidth="105.0" />
+                  <TextField fx:id="mathsmarks" layoutX="144.0" layoutY="202.0" prefHeight="25.0" prefWidth="105.0" />
+                  <TextField fx:id="pocmarks" layoutX="144.0" layoutY="160.0" prefHeight="25.0" prefWidth="105.0" />
+                  <TextField fx:id="pcpfmarks" layoutX="362.0" layoutY="160.0" prefHeight="25.0" prefWidth="105.0" />
+                  <TextField fx:id="dbmsmarks" layoutX="362.0" layoutY="119.0" prefHeight="25.0" prefWidth="105.0" />
+                  <Label layoutX="105.0" layoutY="122.0" text="DSA : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="307.0" layoutY="122.0" text="DBMS : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="163.0" text="POC : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="310.0" layoutY="163.0" text="PCPF : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="309.0" layoutY="205.0" text="JAVA : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="205.0" text="MATHS : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="192.0" layoutY="24.0" text="Enter Student Marks">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="exampick" layoutX="362.0" layoutY="71.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="140.0" text="Choose the exam" textAlignment="RIGHT">
+                     <items>
+                        <MenuItem fx:id="ia1" mnemonicParsing="false" text="IA-1" />
+                        <MenuItem fx:id="ia2" mnemonicParsing="false" text="IA-2" />
+                        <MenuItem fx:id="ese" mnemonicParsing="false" text="END SEM" />
+                     </items>
+                  </MenuButton>
+                  <Button layoutX="268.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleSubmit" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Submit" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+
+    </tabs>
+</TabPane>

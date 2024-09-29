@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="News" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.HomeController">
+   <children>
+      <VBox prefHeight="370.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <AnchorPane prefHeight="102.0" prefWidth="200.0" style="-fx-background-color: #99D9EA;">
+               <children>
+                  <Label layoutX="57.0" layoutY="62.0" prefHeight="40.0" prefWidth="73.0" scaleX="1.5" scaleY="1.5" style="-fx-background-color: #99D9EA;" text="DASHBOARD" textOverrun="CLIP" />
+                  <ImageView id="gradcap.png" fitHeight="62.0" fitWidth="70.0" layoutX="63.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gradcap.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="home" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleHomePage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Home" textFill="WHITE" />
+            <Button fx:id="attandper" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleAttenPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Attendance and Performance" textFill="WHITE" />
+            <Button fx:id="candc" graphicTextGap="40.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClubPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Clubs/Commitees" textFill="WHITE" />
+            <Button fx:id="news" layoutX="10.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleNewsPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="News" textFill="WHITE" />
+         </children>
+      </VBox>
+      <HBox layoutX="209.0" layoutY="137.0" prefHeight="26.0" prefWidth="468.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="199.0" layoutY="-4.0" prefHeight="115.0" prefWidth="498.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <Text fx:id="SMS" fill="#f2efef" layoutX="120.0" layoutY="58.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" textAlignment="CENTER" wrappingWidth="239.49999982299414">
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" spread="0.07" width="0.0" />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="103.0" prefHeight="438.0" prefWidth="498.0" style="-fx-background-color: #99D9EA;">
+         <children>
+            <Label layoutX="29.0" layoutY="14.0" prefHeight="43.0" prefWidth="84.0" text="News">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Text layoutX="69.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadlines of EBC Scholarship form is approaching .Go to the link below to apply" wrappingWidth="328.2882652282715" />
+            <Hyperlink layoutX="67.0" layoutY="97.0" prefHeight="26.0" prefWidth="298.0" text="https://mahadbt.maharashtra.gov.in/login/login" />
+            <Text layoutX="70.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the below link to see the results of the Student Council Elections for 2024-25. " wrappingWidth="328.2882652282715" />
+            <Hyperlink layoutX="70.0" layoutY="177.0" text="https://www.dbit.in/dbit-student-council.html" />
+            <Text layoutX="70.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the link below See the results of the latest NAAC visit to DBIT" wrappingWidth="328.2882652282715" />
+            <Hyperlink layoutX="70.0" layoutY="253.0" text="https://www.dbit.in/naac.html" />
+            <Label layoutX="33.0" layoutY="279.0" prefHeight="43.0" prefWidth="105.0" text="Notice">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Text layoutX="67.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onam Celebrations have been postponed to 25th of september due to the holiday that was declared on 18th of september by Mumbai University " wrappingWidth="328.2882652282715" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="349.0" prefHeight="193.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <Button layoutY="109.0" mnemonicParsing="false" onAction="#handleAboutPage" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="About Us" textFill="WHITE" />
+            <Button layoutY="66.0" mnemonicParsing="false" onAction="#handleSettingPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Profile Settings" textFill="WHITE" />
+            <Button fx:id="Logout" layoutY="151.0" mnemonicParsing="false" onAction="#handleLoginPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: maroon;" text="Log Out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="About" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.HomeController">
+   <children>
+      <VBox prefHeight="370.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <AnchorPane prefHeight="102.0" prefWidth="200.0" style="-fx-background-color: #99D9EA;">
+               <children>
+                  <Label layoutX="63.0" layoutY="68.0" prefHeight="34.0" prefWidth="74.0" scaleX="1.5" scaleY="1.5" style="-fx-background-color: #99D9EA;" text="DASHBOARD" textOverrun="CLIP" />
+                  <ImageView fitHeight="62.0" fitWidth="70.0" layoutX="69.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gradcap.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="home" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleHomePage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Home" textFill="WHITE" />
+            <Button fx:id="attandper" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleAttenPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Attendance and Performance" textFill="WHITE" />
+            <Button fx:id="candc" graphicTextGap="40.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClubPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Clubs/Commitees" textFill="WHITE" />
+            <Button fx:id="news" layoutX="10.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleNewsPage" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="News" textFill="WHITE" />
+         </children>
+      </VBox>
+      <HBox layoutX="209.0" layoutY="137.0" prefHeight="26.0" prefWidth="468.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="199.0" layoutY="-4.0" prefHeight="115.0" prefWidth="498.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <Text fx:id="SMS" fill="#f2efef" layoutX="120.0" layoutY="58.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" textAlignment="CENTER" wrappingWidth="239.49999982299414">
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" spread="0.07" width="0.0" />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="103.0" prefHeight="438.0" prefWidth="498.0" style="-fx-background-color: #99D9EA;">
+         <children>
+            <Label layoutX="203.0" layoutY="25.0" prefHeight="28.0" prefWidth="91.0" text="About Us" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Text layoutX="33.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are a team of four dedicated students working on an exciting mini project: developing a comprehensive system. Our project aims to simplify the management of student events, attendance, and performance with an intuitive and user-friendly platform." textAlignment="CENTER" wrappingWidth="431.1999816894531">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Label layoutX="199.0" layoutY="150.0" prefHeight="32.0" prefWidth="91.0" style="-fx-font-weight: bold;" text="Our Team" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Text layoutX="67.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shariya Ansasri" wrappingWidth="120.3830509185791">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="266.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atharva Bawge" wrappingWidth="120.3830509185791">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="110.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alston Coelho" wrappingWidth="111.58306312561035">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="321.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manya Shah" wrappingWidth="100.3830509185791">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="147.0" layoutY="272.0" prefHeight="28.0" prefWidth="237.0" style="-fx-font-weight: bold;" text="Contact Us On Our Emails" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Text layoutX="59.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="shariyaansari8425@gmail.com" wrappingWidth="405.6000061035156">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="coelhoalston@gmail.com" textAlignment="RIGHT" wrappingWidth="405.6000061035156">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="manya1105s@gmail.com" wrappingWidth="405.6000061035156">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bawgeatharva11@gmail.com" textAlignment="RIGHT" wrappingWidth="405.6000061035156">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="356.0" prefHeight="185.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <Button layoutY="101.0" mnemonicParsing="false" onAction="#handleAboutPage" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="About Us" textFill="WHITE" />
+            <Button layoutY="58.0" mnemonicParsing="false" onAction="#handleSettingPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: #1D3E49;" text="Profile Settings" textFill="WHITE" />
+            <Button fx:id="Logout" layoutY="143.0" mnemonicParsing="false" onAction="#handleLoginPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: maroon;" text="Log Out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

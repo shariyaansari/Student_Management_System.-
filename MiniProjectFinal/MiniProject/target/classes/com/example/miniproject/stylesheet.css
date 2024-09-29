@@ -1,0 +1,47 @@
+
+.main{
+    -fx-background-color:linear-gradient(to bottom right, #99D9EA,#1D3E49);
+}
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right, #99D9EA,#1D3E49);
+}
+
+.X{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.X:hover{
+    -fx-background-color:#3d8b3d;
+}
+
+.button-login{
+    -fx-background-color: #3d8b3d
+}
+
+.button-login:hover{
+    opacity: 0.8;
+    -fx-cursor:hand;
+}
+.editBtn{
+    -fx-background-color: transparent;
+    -fx-border-radius: 100;
+}
+.editBtn:hover{
+    -fx-cursor:hand;
+    -fx-background-color: #bde4e4;
+    -fx-opacity: 0.8;
+}
+.text-field{
+    -fx-border-radius: 4px;
+}
+.selectedBox{ -fx-border-color: #fff;
+    -fx-border-width: 0 4 0 0;
+}
+.selectedBox:hover{
+    -fx-background-color: #BDE4E4FF;
+}
+
+
+

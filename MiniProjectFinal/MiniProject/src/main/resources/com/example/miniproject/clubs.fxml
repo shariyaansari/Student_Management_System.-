@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Club" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.HomeController">
+   <children>
+      <HBox layoutX="209.0" layoutY="137.0" prefHeight="26.0" prefWidth="468.0" />
+      <AnchorPane layoutX="199.0" layoutY="-4.0" prefHeight="107.0" prefWidth="498.0" styleClass="left-form" stylesheets="@stylesheet.css">
+         <children>
+            <Text fx:id="SMS" fill="#f2efef" layoutX="120.0" layoutY="58.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" textAlignment="CENTER" wrappingWidth="239.49999982299414">
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" spread="0.07" width="0.0" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="13.600000381469727" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="103.0" prefHeight="438.0" prefWidth="491.0" style="-fx-background-color: #99D9EA;">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="498.0" style="-fx-background-color: #99D9EA;">
+               <children>
+                  <Label layoutX="14.0" layoutY="8.0" prefHeight="36.0" prefWidth="348.0" text="Clubs and Chapters OF DBIT" textFill="#383434">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane hbarPolicy="NEVER" layoutY="43.0" pannable="true" prefHeight="399.0" prefWidth="498.0">
+                     <content>
+                        <Accordion prefHeight="522.0" prefWidth="486.0" styleClass="accordion-header" stylesheets="@stylesheet.css">
+                          <panes>
+                              <TitledPane layoutX="10.0" layoutY="99.0" prefHeight="146.0" prefWidth="488.0" styleClass="accordion" stylesheets="@stylesheet.css" text="CSI">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="474.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" hmax="0.0" prefHeight="118.0" prefWidth="485.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="190.0" prefWidth="487.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="24.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSI, well known for Computer Society of India is another reputed student chapter under the Department of Information Technology. The Computer Society of India is a non-profit professional organisation that meets to discuss ideas, study, and share information. CSI also promotes and supports professionals in maintaining the profession's integrity and competence, and it creates a feeling of cooperation among members. Two of the major flagships events of CSI at Don Bosco Institute of Technology are: Game of codes &amp; Coding premier league, where students across the engineering departments come together and innovate solutions over various problem statements! Visit here for more info: https://csi.dbit.in/" textAlignment="JUSTIFY" wrappingWidth="425.33671951293945" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="69.0" prefHeight="146.0" prefWidth="488.0" style="-fx-background-color: lightblue;" text="IEEE">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="474.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" hmax="0.0" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="23.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The IEEE society at Don Bosco Institute of Technology is a professional organisation that creates, defines, and evaluates standards in electronics and computer science. Its goal statement is to &quot;promote technical innovation and excellence for the benefit of humanity.&quot; IEEE and its members inspire a community through its highly cited publications, conferences, technology standards, and professional and various educational activities which will make the students ready for the corporate world! Visit here for more info:https://ieee.dbit.in/ " textAlignment="JUSTIFY" wrappingWidth="426.93669509887695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="99.0" prefHeight="146.0" prefWidth="488.0" text="ACM">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="23.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACM, well known for Association for Computing Machinery is a reputed student chapter under the Department of Computer Engineering. Through strong leadership, advocacy of the highest standards, and acknowledgment of technological accomplishment, ACM enhances the computer profession's collective voice. ACM encourages its members' professional development by offering opportunities for lifelong learning, career advancement, and professional networking. ‘Teknack’ is the flagship event of ACM wherein all students interested in game development come together to produce games using their creativity, technical skills and vivid frameworks and publish them over Google Playstore platform.Visit here for more info: https://dbit.acm.org/" textAlignment="JUSTIFY" wrappingWidth="427.73692417144775" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="128.0" prefHeight="146.0" prefWidth="488.0" text="GDSC">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="120.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="182.0" prefWidth="487.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="27.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GDSC, the Google Developer Student Club is a Google-backed university club fostering Cloud Computing, Web and App Development, DSA, etc, learning, collaboration, and networking among students interested in Google technologies. It is a reputed club of DBIT which aims to foster overall technical skills of the students to make them industry ready and familiar with latest technology trends. It's motto is &quot;By the students, For the Students&quot; which focuses on peer to peer learning. It also emphasizes on fostering the coding culture in college and making students aware of it's importance.GDSC Website: https://gdsc.dbit.in/" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="128.0" prefHeight="146.0" prefWidth="488.0" text="MAD GEAR SPORT">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="111.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="29.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAD gear sports is an independent student chapter for the students pursuing mechanical engineering. The main motive of this club is to connect and educate engineers while promoting, developing and advancing commercial and automotive engineering. Their mission is to advance mobility knowledge and solutions for the benefit of humanity!" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="128.0" prefHeight="146.0" prefWidth="488.0" text="ISHRAE">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="488.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="225.0" prefWidth="488.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="36.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Indian Society of Heating, Refrigerating and Air Conditioning Engineers (ISHRAE) was formed at Don Bosco Institute of Technology to help students get more knowledge about the HVAC industry. The goal of an ISHRAE student chapter is to increase the number of students who are interested, concerned, and active in pursuing a profession in the field of heating, ventilation, air conditioning, and refrigeration. ISHRAE student chapter activities are managed by students who are selected as the core committee. These members will then provide students hands-on experience operating a company or organisation through various workshops, seminars etc! You can find last years activites in the summary report link. https://www.dbit.in/images/student-bodies/ISHRAESummaryReport2020-2021DBIT.pdf" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="158.0" prefHeight="146.0" prefWidth="488.0" text="Physics Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="488.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="196.0" prefWidth="490.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="36.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Physics Club of DBIT is for students who wish to learn about the applications of physics. Members of the club have the opportunity to demonstrate their abilities by constructing physics-based projects. The group is available to all students, but it is especially useful to those interested in a career in physics. The Physics Club's mission is to encourage involvement in the study of physics. The subjects are largely those addressed in the text, although because physics is such a vast subject, any issue can be studied. This club serves as a sounding board for ideas and feedback. Projects are encouraged, and assistance with exams, quizzes, and labs is offered.For more info visit : https://ieee.dbit.in/" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="188.0" prefHeight="146.0" prefWidth="488.0" text="Mathematics Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="488.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="490.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="36.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Mathematics Club of DBIT (aka DOMAIN) is a great platform for students to develop intuitive thinking skills and learn new types of math. Students will not only learn new material, but will apply their previous knowledge from college to solve fun and challenging problems in an easier way. The domain club raises the profile of maths as a subject by conducting various interesting workshops, seminars and competitions for students and helping them realise how fun, exciting the subject ‘Maths’ can be!" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="217.0" prefHeight="146.0" prefWidth="488.0" text="Social Innovation for Environment Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="487.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="487.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amidst the thickly populated concrete jungles of the suburban Kurla, of Mumbai district, DBIT is an oasis of greenery. With a huge football ground and abundant lush green trees it's full of serenity and is a home for a variety of birds. With our Don Bosco values the students, faculty of SIE Club pledge to make the campus carbon neutral, create environmental awareness and promote sustainability with sustainable lifestyle using innovative engineering.For more info visit : https://sie.dbit.in/" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="247.0" prefHeight="146.0" prefWidth="488.0" text="IETE">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="487.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the vibrant world of the Institution of Electronics and Telecommunication Engineers (IETE) at Don Bosco Institute of Technology. As an esteemed organization, IETE-DBIT has earned recognition by winning the prestigious Best ISF (Institutional Student Forum) Award. IETE is a student-led club promoting technology and engineering excellence. Through workshops, competitions, and research, members enhance their skills and expand their knowledge. With a dedicated student core, IETE remains at the forefront, fostering innovation and practical applications. Our motto is &quot;For the students, by the students,&quot; reflecting our commitment to serving and empowering our student community." textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="276.0" prefHeight="146.0" prefWidth="488.0" text="Music Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="485.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="144.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stimulating the mind, increasing attention, bettering mental states and inducing relaxations coupled with extreme levels of sweet melody, The well known Music Club of DBIT gives platform to budding singers - Be them trained or freestyle,and assists them in showcasing their skill set to the audience with their rhythmic voice notes and unparalleled controlling pitches through the means of equipping them with the college's own music studio meant for rehearsal and recordings." textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="336.0" prefHeight="146.0" prefWidth="488.0" text="Drama Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With the relentless pursuit to achieve academic excellence, the requirement for entertainment is often alienated and hence, lives begin to take monotonous turns. With the aim to demonstrate this dreadful consequence, DBIT's Drama club ensures that there's always presence of rejuvenating and mind enhancing entertainment in the form of Drama in student lives. Also giving a platform for entertaining enthusiasts to demonstrate their skill set and potentially improve it, the club hits two targets with one shot." textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="336.0" prefHeight="146.0" prefWidth="488.0" text="Literary Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answering several debate and argumentative topics through the means of official and rule based competitions, the literary club of the institution has certainly created an unmatched position for itself. Organizing elocutions, recitations, essay writing competitions and providing the platform to get self authored articles published, the club harbours language enthusiasts and polishes their skills to an incomparable extent. Sharpening and shaping interpersonal skills with the intention to prepare students for the corporate world." textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="336.0" prefHeight="146.0" prefWidth="488.0" text="Marathi Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="134.0" prefWidth="487.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="जगाचा प्रवास करा आणि तुमच्या अंतःप्रेरणा तुम्हाला तुमच्या घरी परत खेचतील Agreeing with the universally true statement above, DBIT's Marathi club ensures that the essence of our home state is preserved and protected throughout the years through the means of Marathi writings, singing and drama. It is certainly among one of the clubs that helps the college to thrive and excel in all aspects." wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="336.0" prefHeight="146.0" prefWidth="488.0" text="Creative Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="486.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="157.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="35.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The creative club of DBIT is an initiative by students to make classroom environments more creative and interesting! The purpose of the creative club is to simulate interest in creative ideas among students of various departments. The club attempts to create an awareness of the student mind. This club gives an opportunity for students to develop creative designs, posters for various events at DBIT. Under the creative club, there are three fields: Design, photography and Decor. Students can choose to work in any of the above mentioned fields and show their talents in various events!" textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane layoutX="10.0" layoutY="336.0" prefHeight="146.0" prefWidth="488.0" text="Dance Club">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="458.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" prefHeight="111.0" prefWidth="485.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="486.0" style="-fx-background-color: lightblue;">
+                                                   <children>
+                                                      <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is an already established fact that moving your body in accordance with music not only promotes acute health benefits but also ensures a significant boost to self confidence, esteem and personal expressions. Highlighting the importance that dancing plays in our lives, the Dance Club of the institution provides a healthy platform to the students on which they learn to express themselves freely while controlling their emotions. The club remains among the elite ones and is a true teacher of having conversations between the body and the soul." textAlignment="JUSTIFY" wrappingWidth="416.53679275512695" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="548.0" prefWidth="200.0" spacing="10.0" styleClass="left-form" stylesheets="@stylesheet.css">
+         <children>
+            <AnchorPane prefHeight="67.0" prefWidth="184.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../graduation-hat.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="46.0" prefHeight="20.0" prefWidth="140.0" text="Dashboard">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.24313725531101227" green="0.3529411852359772" blue="0.6901960968971252" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#handleHomePage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-cursor: hand; -fx-background-radius: 40;" text="Home" textFill="WHITE" />
+            <Button fx:id="attandper" mnemonicParsing="false" onAction="#handleAttenPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-background-radius: 40; -fx-cursor: hand;" styleClass="left-form" text="Academics" textFill="WHITE" />
+            <Button fx:id="candc" mnemonicParsing="false" onAction="#handleClubPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-background-radius: 40; -fx-cursor: hand;" styleClass="left-form" text="Clubs/Committees" textFill="WHITE" />
+            <Button fx:id="news" mnemonicParsing="false" onAction="#handleNewsPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49; -fx-cursor: hand;" text="News" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#handleSettingPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49; -fx-cursor: hand;" text="Profile Settings" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#handleAboutPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49; -fx-cursor: hand;" text="About Us" textFill="WHITE" />
+            <Button fx:id="Logout" mnemonicParsing="false" onAction="#handleLoginPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #ff3131; -fx-cursor: hand;" text="Log Out" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #99D9EA;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.SettingController">
+    <left>
+        <VBox prefHeight="442.0" prefWidth="175.0" styleClass="left-form" stylesheets="@stylesheet.css">
+            <children>
+                <ImageView fitHeight="125.0" fitWidth="125.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@prof.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="25.0" top="25.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="175.0" text="Name of student">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="45.0" prefWidth="175.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="175.0" text="Profile">
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="175.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#handlePasswordLink" prefHeight="25.0" prefWidth="175.0" text="Change Password">
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            <HBox prefHeight="45.0" prefWidth="175.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#deleteAccount" prefHeight="25.0" prefWidth="175.0" text="Delete Account" textFill="RED">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+                <Button mnemonicParsing="false" onAction="#handleHomePage" prefHeight="30.0" prefWidth="175.0" styleClass="X" stylesheets="@stylesheet.css" text="Back to home" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets top="60.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="418.0" prefWidth="400.0" spacing="25.0" style="-fx-background-color: #99D9EA;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="69.0" prefWidth="406.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="428.0" styleClass="left-form" stylesheets="@stylesheet.css" text="Profile Settings" textFill="WHITE">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="20.0" prefWidth="225.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="UserName">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="userNameField" prefHeight="26.0" prefWidth="254.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="104.0" prefHeight="20.0" prefWidth="225.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="FirstName">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="firstNameField" prefHeight="30.0" prefWidth="130.0" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="LastName">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="lastNameField" prefHeight="30.0" prefWidth="130.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="159.0" prefHeight="20.0" prefWidth="225.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="StdID">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="stdIdField" prefHeight="30.0" prefWidth="130.0" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="Phone">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="phoneField" prefHeight="30.0" prefWidth="130.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="213.0" prefHeight="20.0" prefWidth="225.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="Email:">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="emailField" prefHeight="30.0" prefWidth="130.0" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="75.0" text="DOB">
+                            <HBox.margin>
+                                <Insets top="3.0" />
+                            </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="dobPicker" prefHeight="30.0" prefWidth="130.0" />
+                    </children>
+                </HBox>
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#saveChanges" prefHeight="30.0" prefWidth="200.0" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Save Changes">
+                    <VBox.margin>
+                        <Insets left="110.0" right="100.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

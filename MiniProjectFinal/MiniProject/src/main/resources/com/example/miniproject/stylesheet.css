@@ -1,0 +1,67 @@
+
+.main{
+    -fx-background-color:linear-gradient(to bottom right, #99D9EA,#1D3E49);
+}
+
+.left-form{
+    -fx-background-color:linear-gradient(to bottom right, #99D9EA,#1D3E49);
+}
+
+.X{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.X:hover{
+    -fx-background-color:#3d8b3d;
+}
+
+.button-login{
+    -fx-background-color: #65B665FF
+}
+
+.button-login:hover{
+    opacity: 0.8;
+    -fx-cursor:hand;
+}
+.editBtn{
+    -fx-background-color: transparent;
+    -fx-border-radius: 100;
+}
+.editBtn:hover{
+    -fx-cursor:hand;
+    -fx-background-color: #bde4e4;
+    -fx-opacity: 0.8;
+}
+.text-field{
+    -fx-border-radius: 4px;
+}
+.selectedBox{ -fx-border-color: #fff;
+    -fx-border-width: 0 4 0 0;
+}
+.selectedBox:hover{
+    -fx-background-color: #BDE4E4FF;
+}
+.accordion-header {
+    background-color: #54ace4; /* Set the background color */
+    color: white; /* Set the text color */
+}
+
+.accordion-header:hover{
+    -fx-background-color: #BDE4E4FF;
+    -fx-cursor: hand;
+}
+.accordion-body {
+    background-color: #f8f9fa; /* Set the background color */
+    color: #000; /* Set the text color */
+}
+.accordion {
+    border: 1px solid #dee2e6; /* Border color */
+}
+
+.accordion-icon {
+    color: #28a745; /* Icon color */
+}
+
+
+

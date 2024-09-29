@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ToDo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniproject.HomeController">
+   <children>
+      <HBox layoutX="209.0" layoutY="137.0" prefHeight="26.0" prefWidth="468.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="199.0" layoutY="-4.0" prefHeight="115.0" prefWidth="498.0" style="-fx-background-color: #1D3E49;">
+         <children>
+            <Text fx:id="SMS" fill="#f2efef" layoutX="120.0" layoutY="58.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" textAlignment="CENTER" wrappingWidth="239.49999982299414">
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" spread="0.07" width="0.0" />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="200.0" layoutY="103.0" prefHeight="448.0" prefWidth="498.0" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="446.0" prefWidth="498.0" style="-fx-background-color: #99D9EA;">
+               <children>
+                  <ListView fx:id="listOfNames" layoutX="24.0" layoutY="154.0" prefHeight="250.0" prefWidth="438.0" style="-fx-background-radius: 20; -fx-background-color: #61D6F6FF;" />
+                  <TextField fx:id="name" layoutX="45.0" layoutY="28.0" prefHeight="30.0" prefWidth="396.0" promptText="Type your TO DO task here" />
+                  <Button fx:id="addtask" layoutX="129.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#addtask" prefHeight="30.0" prefWidth="227.0" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Click here to add task" />
+                  <Button fx:id="removetask" layoutX="118.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#removetask" prefHeight="30.0" prefWidth="262.0" style="-fx-background-radius: 30;" styleClass="button-login" stylesheets="@stylesheet.css" text="Click here to remove selected task" />
+                  <Label layoutX="30.0" layoutY="131.0" prefHeight="22.0" prefWidth="179.0" text="TO DO JOURNAL:-">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <VBox prefHeight="553.0" prefWidth="200.0" spacing="10.0" styleClass="left-form" stylesheets="@stylesheet.css">
+         <children>
+            <AnchorPane prefHeight="67.0" prefWidth="184.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../graduation-hat.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="46.0" prefHeight="20.0" prefWidth="140.0" text="Dashboard">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.24313725531101227" green="0.3529411852359772" blue="0.6901960968971252" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#handleHomePage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-background-radius: 40;" styleClass="left-form" text="Home" textFill="WHITE" />
+            <Button fx:id="attandper" mnemonicParsing="false" onAction="#handleAttenPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-background-radius: 40;" styleClass="left-form" text="Academics" textFill="WHITE" />
+            <Button fx:id="candc" mnemonicParsing="false" onAction="#handleClubPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #1D3E49; -fx-background-radius: 40;" styleClass="left-form" text="Clubs/Committees" textFill="WHITE" />
+            <Button fx:id="news" mnemonicParsing="false" onAction="#handleNewsPage" prefHeight="62.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49;" text="News" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#handleSettingPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49;" stylesheets="@stylesheet.css" text="Profile Settings" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#handleAboutPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #1D3E49;" text="About Us" textFill="WHITE" />
+            <Button fx:id="Logout" mnemonicParsing="false" onAction="#handleLoginPage" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #ff3131;" text="Log Out" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
